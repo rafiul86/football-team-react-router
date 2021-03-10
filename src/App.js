@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import League from './component/League';
 import Team from './component/Team';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
     return (
         <div>
