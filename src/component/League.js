@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import LeagueDetails from "./LeagueDetails";
 import { Container, Jumbotron } from "react-bootstrap";
 import image from "./../stadium.jpg";
+import './League.css'
 
 const League = () => {
   const [leagues, setLeagues] = useState([]);
@@ -14,9 +15,7 @@ const League = () => {
   }, []);
   return (
     <Container fluid>
-      <Jumbotron fluid>
-        <img src={image} alt="" />
-      </Jumbotron>
+      <header><img src={image} alt="" /></header>
       {leagues.map((league) => (
         <LeagueDetails league={league}></LeagueDetails>
       ))}

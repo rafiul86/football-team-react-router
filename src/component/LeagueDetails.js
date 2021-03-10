@@ -10,7 +10,7 @@ const LeagueDetails = (props) => {
     history.push(url);
   };
   return (
-    <Container fluid>
+    <Container  fluid>
       <Row>
         <Col>
           <Card className="text-center" style={{ width: "18rem" }}>

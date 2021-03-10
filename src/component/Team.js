@@ -25,7 +25,7 @@ const Team = () => {
         <img 
          src={teams.strTeamBanner} alt=""/>
       </Jumbotron> */}
-      <div style = {{backgroundColor : "magenta"}}>
+      <div style = {{backgroundColor : "grey"}}>
         <div></div>
         <div className="text-center" >
           <div>
