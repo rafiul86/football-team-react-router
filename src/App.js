@@ -1,39 +1,29 @@
-import './App.css';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import League from './component/League';
-import LeagueDetails from './component/LeagueDetails';
-
-function App() {
-  return (
-    <div>
-     <Router>
-      <div>
-        <nav>
-         
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
+import Team from './component/Team';
+const App = () => {
+    return (
+        <div>
+            <Router>
+            <Switch>
           <Route path="/league">
             <League/>
           </Route>
           <Route path="/:id">
-            <LeagueDetails/>
+            <Team/>
           </Route>
-          <Route exact path="/">
+          <Route path="/">
             <League/>
           </Route>
         </Switch>
-      </div>
-    </Router>
-    </div>
-  );
-}
+            </Router> 
+        </div>
+    );
+};
 
 export default App;
