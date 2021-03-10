@@ -33,6 +33,7 @@ const Team = () => {
             <h2>{teams.strLeague}</h2>
             <h3>{teams.strSport}</h3>
             <h3>{teams.strGender}</h3>
+            <p>{teams.strFormedYear}</p>
           </div>
           <div>
             <img src="" alt="" />

@@ -13,12 +13,14 @@ const League = () => {
       .then((res) => res.json())
       .then((data) => setLeagues(data.teams));
   }, []);
+  
   return (
     <Container fluid>
       <header><img src={image} alt="" /></header>
-      {leagues.map((league) => (
+      <div className = "design">{leagues.map((league) => (
         <LeagueDetails league={league}></LeagueDetails>
-      ))}
+      ))}</div>
+      
     </Container>
   );
 };
