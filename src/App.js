@@ -1,30 +1,26 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import League from './component/League';
-import Team from './component/Team';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import League from "./component/League";
+import Team from "./component/Team";
+
 const App = () => {
-    return (
-        <div>
-            <Router>
-            <Switch>
+  return (
+    <div>
+      <Router>
+        <Switch>
           <Route path="/league">
-            <League/>
+            <League />
           </Route>
           <Route path="/:id">
-            <Team/>
+            <Team />
           </Route>
           <Route path="/">
-            <League/>
+            <League />
           </Route>
         </Switch>
-            </Router> 
-        </div>
-    );
+      </Router>
+    </div>
+  );
 };
 
 export default App;
