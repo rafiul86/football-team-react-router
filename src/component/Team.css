@@ -1,3 +1,14 @@
+
 .design{
     display: flex;
+} 
+ img{
+    width : 35%;
+}
+.logo-design{
+    width: 400px;
+    height: 200px;
+}
+.back-design{
+    background-image: url(/src/stadium.jpg);
 }

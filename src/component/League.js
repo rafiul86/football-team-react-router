@@ -16,8 +16,8 @@ const League = () => {
   
   return (
     <Container fluid>
-      <header><img src={image} alt="" /></header>
-      <div className = "design">{leagues.map((league) => (
+      <header><img className ="img" src={image} alt="" /></header>
+      <div style = {{backgroundColor : "slateblue"}} className = "design-imago">{leagues.map((league) => (
         <LeagueDetails league={league}></LeagueDetails>
       ))}</div>
       

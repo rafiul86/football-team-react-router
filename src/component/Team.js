@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Jumbotron, Card, Container } from "react-bootstrap";
+import image from "./../male.png";
+import './Team.css'
 
 const Team = () => {
   const { id } = useParams();
@@ -11,14 +13,15 @@ const Team = () => {
       .then((res) => res.json())
       .then((data) => setTeams(data.teams[0]));
   }, [id]);
+  
 
   return (
       <Container fluid>
-    <div>
-      <Card className="text-center">
+    <div >
+      <Card className="text-center back-design">
         <Card.Body>
           <Card.Title>PIONEER OF THE LEGEND</Card.Title>
-          <img src={teams.strTeamBanner} alt="" />
+          <img className = "logo-design" src={teams.strTeamLogo} alt="" />
         </Card.Body>
       </Card>
       {/* <Jumbotron>
@@ -27,16 +30,16 @@ const Team = () => {
       </Jumbotron> */}
       <div style = {{backgroundColor : "grey"}}>
         <div></div>
-        <div className="text-center" >
+        <div style = {{backgroundColor : "goldenrod"}} className="text-center d-flex" >
           <div>
-            <h1>{teams.strTeam}</h1>
-            <h2>{teams.strLeague}</h2>
-            <h3>{teams.strSport}</h3>
-            <h3>{teams.strGender}</h3>
-            <p>{teams.strFormedYear}</p>
+            <h3>{teams.strLeague}</h3>
+            <h5>Sport type : {teams.strSport}</h5>
+            <h5>Gender : {teams.strGender}</h5>
+            <h5>Country : {teams.strCountry}</h5>
+            <p>Formed : {teams.intFormedYear}</p>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src={image} alt="" />
           </div>
         </div>
         <div>

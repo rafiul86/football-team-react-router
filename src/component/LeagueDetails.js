@@ -14,14 +14,14 @@ const LeagueDetails = (props) => {
       <Row >
         <Col>
           <Card className="text-center" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={strTeamBadge} />
+            <Card.Img variant="top" style = {{margin : "50px",height : "180px", width : " 180px",align : "center"}} src={strTeamBadge} />
             <Card.Body>
               <Card.Title>{strCountry}</Card.Title>
               <Card.Text>{strLeague}</Card.Text>
               <Card.Text>{strTeam}</Card.Text>
               <Button btn-color="primary" onClick={() => handleClick(idTeam)}>
                 {" "}
-                Explore{" "}
+                Explore ->{" "}
               </Button>
             </Card.Body>
           </Card>
