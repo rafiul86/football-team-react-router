@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LeagueDetails from "./LeagueDetails";
-import { Container, Jumbotron } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import image from "./../stadium.jpg";
 import './League.css'
 
