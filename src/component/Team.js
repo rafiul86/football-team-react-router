@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { Jumbotron, Card, Container } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import image from "./../male.png";
 import './Team.css'
 
