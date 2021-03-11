@@ -2,7 +2,7 @@
 
 *Next page shows the brief description og the team *
 
-###key features
+### key features
 1. England football leagues logo.
 1. Related football team.
 1. Their succes history over previous years.
